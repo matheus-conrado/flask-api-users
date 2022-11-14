@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "flask-api-users"
+version = "0.1.0"
+description = "User API using to Flask"
+authors = ["Matheus Conrado <matheus.conrado@outlook.com>"]
+readme = "README.md"
+packages = [{include = "flask_api_users"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.2"
+python-dotenv = "^0.21.0"
+flask-restful = "^0.3.9"
+pytest = "^7.2.0"
+flake8 = "^5.0.4"
+pytest-cov = "^4.0.0"
+pytest-flask = "^1.2.0"
+faker = "^15.3.1"
+pytest-runner = "^6.0.0"
+ipython = "^8.6.0"
+ipdb = "^0.13.9"
+flask-shell-ipython = "^0.4.1"
+isort = "^5.10.1"
+gunicorn = "^20.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
