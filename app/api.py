@@ -4,7 +4,7 @@ class Index(Resource):
 
     def get(self):
         
-        return {'hello':'world my apps'}
+        return {'hello':'world by apps'}
 
 api = Api()
 

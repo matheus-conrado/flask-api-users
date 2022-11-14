@@ -7,6 +7,11 @@ __long_description__ = 'User API using to Flask'
 __author__ = 'Matheus Conrado'
 __author_email__ = 'matheus.conrado@outlook.com'
 
+testing_extras = [
+    'pytest',
+    'pytest-cov'
+]
+
 setup(
     name='api',
     version=__version__,
@@ -37,4 +42,9 @@ setup(
         'Programming Language :: Python :: 3.10',
         'License :: OSI Approved :: MIT License',
     ],
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest'],
+    extra_require={
+        'testing':testing_extras
+    },
 )
